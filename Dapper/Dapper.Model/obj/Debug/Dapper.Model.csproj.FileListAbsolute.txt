@@ -1,0 +1,16 @@
+D:\GitHub\Test\MVC\Dapper\Dapper.Model\obj\Debug\Dapper.Model.csprojResolveAssemblyReference.cache
+D:\GitHub\Test\MVC\Dapper\Dapper.Model\bin\Debug\Dapper.Model.dll
+D:\GitHub\Test\MVC\Dapper\Dapper.Model\bin\Debug\Dapper.Model.pdb
+D:\GitHub\Test\MVC\Dapper\Dapper.Model\bin\Debug\Dapper.dll
+D:\GitHub\Test\MVC\Dapper\Dapper.Model\bin\Debug\DapperExtensions.dll
+D:\GitHub\Test\MVC\Dapper\Dapper.Model\bin\Debug\Dapper.xml
+D:\GitHub\Test\MVC\Dapper\Dapper.Model\bin\Debug\DapperExtensions.pdb
+D:\GitHub\Test\MVC\Dapper\Dapper.Model\obj\Debug\Dapper.Model.dll
+D:\GitHub\Test\MVC\Dapper\Dapper.Model\obj\Debug\Dapper.Model.pdb
+D:\GitHub\Test\MVC\Dapper\Dapper.Model\bin\Debug\Dapper.Model.dll.config
+D:\GitHub\Test\MVC\Dapper\Dapper.Model\bin\Debug\MySql.Data.dll
+D:\GitHub\Test\MVC\Dapper\Dapper.Model\bin\Debug\Jil.dll
+D:\GitHub\Test\MVC\Dapper\Dapper.Model\bin\Debug\Sigil.dll
+D:\GitHub\Test\MVC\Dapper\Dapper.Model\bin\Debug\Jil.pdb
+D:\GitHub\Test\MVC\Dapper\Dapper.Model\bin\Debug\Jil.xml
+D:\GitHub\Test\MVC\Dapper\Dapper.Model\bin\Debug\Sigil.xml

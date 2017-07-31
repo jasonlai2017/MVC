@@ -1,0 +1,5 @@
+D:\GitHub\Test\MVC\Dapper\Dapper.Common\bin\Debug\Dapper.Common.dll
+D:\GitHub\Test\MVC\Dapper\Dapper.Common\bin\Debug\Dapper.Common.pdb
+D:\GitHub\Test\MVC\Dapper\Dapper.Common\obj\Debug\Dapper.Common.csprojResolveAssemblyReference.cache
+D:\GitHub\Test\MVC\Dapper\Dapper.Common\obj\Debug\Dapper.Common.dll
+D:\GitHub\Test\MVC\Dapper\Dapper.Common\obj\Debug\Dapper.Common.pdb

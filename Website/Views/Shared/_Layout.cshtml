@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>CRM</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="@Url.Content("~/Content/bootstrap.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Scripts/angular-csp.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/Scripts/jquery-1.9.0.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/bootstrap.min.js")"></script>
+
+    <script src="@Url.Content("~/Scripts/angular.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/angular-animate.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/angular-route.js")"></script>
+    <script src="@Url.Content("~/Scripts/angular-ui/ui-bootstrap-tpls.js")"></script>
+    <!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+    <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+    <!--[if lt IE 9]>
+            <script src="~/Scripts/Custom/html5shiv.js"></script>
+            <script src="~/Scripts/Custom/respond.min.js"></script>
+      <![endif]-->
+    <style>
+        .ErrorDiv {
+            color: #a94442;
+            width: 200px;
+            margin: 12px 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="padding-top: 5px; width: 100%;">
+        <div class="row clearfix" style="margin-bottom: 10px;">
+            <div class="col-md-2 column" style="text-align: center;">
+                <img src="~/Images/Logo.png" />
+            </div>
+            <div class="col-md-10 column" style="text-align: right;">
+                @Html.Partial("_LogOnPartial")
+            </div>
+        </div>
+        <div class="row clearfix" style="height: 100%; min-height: 600px;">
+            <div class="col-md-2 column">
+                @if (HttpContext.Current.User.Identity.IsAuthenticated)
+                {
+                    @Html.Partial("_MenuList")
+                }
+            </div>
+            <div class="col-md-10 column" ng-app="qcApp" ng-controller="qcCtrl">
+                <!--novalidate-->
+                @Html.Partial("_MenuPath")
+                @RenderBody()
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-12 column" style="text-align: center;">
+                Copyright 2017 CRM
+            </div>
+        </div>
+    </div>
+</body>
+</html>

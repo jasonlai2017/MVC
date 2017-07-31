@@ -1,0 +1,13 @@
+﻿<div class="table">
+ <uib-pager 
+    align="true"                                @*上一页和下一页的按钮是否两边对齐*@
+    ng-disabled="false"                         @*是否禁用*@
+    items-per-page="{{pageSize}}"               @*每页显示的数量.设置值小于1表示显示所有项*@
+    ng-model="currentPage"                      @*当前第几页*@
+    total-items="totalItems"                    @*所有页中的项目总数*@  
+    previous-text="{{previousText}}"            @*上一页的按钮名称*@  
+    next-text="{{nextText}}"                    @*下一页的按钮名称*@  
+    ng-change="pageChanged()"                   @*点击分页按钮触发的方法，可用于更改不同页面数据*@  
+</uib-pager>
+</div>
+<pre>当前页：{{currentPage}} 总页数：{{totalPage}} 总记录数：{{totalItems}}</pre>

@@ -1,0 +1,54 @@
+﻿@model Dapper.Model.User
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CRM</title>
+    <link href="@Url.Content("~/Content/bootstrap.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.9.0.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/bootstrap.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/angular.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/angular-animate.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/angular-route.min.js")"></script>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        <div class="container" ng-app="qcApp" ng-controller="qcCtrl" style="width:230px;">
+            <div class="row clearfix">
+                <div class="col-md-2 column" style="text-align: center; margin:10px 0;">
+                    <img src="~/Images/Logo.png" />
+                </div>
+
+                <div class="col-md-12 column">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="LoginName">登录帐号：</label><input type="text" class="form-control" id="LoginName" name="LoginName" ng-model="LoginName" required />
+                            <span ng-show="validateCtrl.LoginName.$error.required">请输入登录帐号。</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="LoginPwd">登录密码：</label><input type="password" class="form-control" id="LoginPwd" name="LoginPwd" ng-model="LoginPwd" required />
+                            <span ng-show="validateCtrl.LoginPwd.$error.required">请输入登录密码。</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="YZM">验证码：</label><input type="text" maxlength="4" class="form-control" id="YZM" name="YZM" ng-model="YZM" required />
+                            <div style="float:right; margin-top:3px;">@Html.ValidateCode("1", 4)</div>
+                        </div>
+                        <button type="submit" class="btn btn-default" >登录</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    }
+</body>
+</html>
+<script>
+    var qcApp = angular.module('qcApp', []);
+    qcApp.controller('qcCtrl', function ($scope, $http) {
+        $scope.LoginName = "ljs";
+        $scope.LoginPwd = "111";
+    });
+</script>

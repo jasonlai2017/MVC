@@ -1,0 +1,58 @@
+﻿using System;
+using System.Collections;
+using System.Web;
+
+namespace Dapper.Common
+{
+    /// <summary>
+    /// 缓存相关的操作类
+    /// Copyright (C) Maticsoft
+    /// </summary>
+    public class DataCache
+    {
+        /// <summary>
+        /// 获取当前应用程序指定CacheKey的Cache值
+        /// </summary>
+        /// <param name="CacheKey"></param>
+        /// <returns></returns>
+        public static object GetCache(string CacheKey)
+        {
+            System.Web.Caching.Cache objCache = HttpRuntime.Cache;
+            return objCache[CacheKey];
+        }
+
+        /// <summary>
+        /// 设置当前应用程序指定CacheKey的Cache值
+        /// </summary>
+        /// <param name="CacheKey"></param>
+        /// <param name="objObject"></param>
+        public static void SetCache(string CacheKey, object objObject)
+        {
+            System.Web.Caching.Cache objCache = HttpRuntime.Cache;
+            objCache.Insert(CacheKey, objObject);
+        }
+
+        /// <summary>
+        /// 设置当前应用程序指定CacheKey的Cache值
+        /// </summary>
+        /// <param name="CacheKey"></param>
+        /// <param name="objObject"></param>
+        public static void SetCache(string CacheKey, object objObject, DateTime absoluteExpiration, TimeSpan slidingExpiration)
+        {
+            System.Web.Caching.Cache objCache = HttpRuntime.Cache;
+            objCache.Insert(CacheKey, objObject, null, absoluteExpiration, slidingExpiration);
+        }
+        /// <summary>
+        /// 清楚缓存
+        /// </summary>
+        public static void RemoveCache()
+        {
+            System.Web.Caching.Cache _cache = HttpRuntime.Cache;
+            IDictionaryEnumerator CacheEnum = _cache.GetEnumerator();
+            while (CacheEnum.MoveNext())
+            {
+                _cache.Remove(CacheEnum.Key.ToString());
+            }
+        }
+    }
+}

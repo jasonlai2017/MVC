@@ -1,0 +1,33 @@
+﻿@using Dapper.Model;
+@{
+    Dapper.BLL.MenuBLL bll_Menu = new Dapper.BLL.MenuBLL();
+    Dapper.BLL.PermissionBLL bll_Permission = new Dapper.BLL.PermissionBLL();
+
+}
+@if (HttpContext.Current.Request.IsAuthenticated)
+{
+    IEnumerable<Menu> menuList = bll_Menu.GetAllList();
+
+    foreach (var item in bll_Menu.GetListByParentMenuId(0))
+    {
+        foreach (var pMenu in menuList)
+        {
+            if (pMenu.Id == item.Id)
+            { 
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#">@pMenu.MenuName</a></li>
+                    @foreach (var itemSub in bll_Menu.GetListByParentMenuId(item.Id))
+                    {
+                        foreach (var sMenu in menuList)
+                        {
+                            if (sMenu.Id == itemSub.Id)
+                            { 
+                                <li><a href="~/@itemSub.AreaName/@itemSub.ControllerName/List">@itemSub.MenuName</a></li>              
+                            }
+                        }
+                    }
+                </ul>
+            }
+        }
+    }
+}

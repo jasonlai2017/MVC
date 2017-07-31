@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@if (Request.IsAuthenticated)
+{
+    <div class="container" style="width: 100%;">
+        <div class="row clearfix">
+            <div class="col-md-12 column">欢迎使用捷云信通CRM系统，请选择左边相关栏目</div>
+        </div>
+    </div>
+}
+else
+{
+    <div>请点击右上角登录按钮进行登录</div>
+}
+<script>
+    var qcApp = angular.module('qcApp', []);
+    qcApp.controller('qcCtrl', function ($scope, $http) {
+    });
+</script>

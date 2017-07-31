@@ -1,0 +1,90 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Website", "Website\Website.csproj", "{DFA69349-D39D-4AD2-A9A9-B7F0FAE2B119}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dapper", "Dapper", "{3EF3329C-091C-4F9E-98AE-100B6B2D4CD4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CreateCode", "CreateCode", "{5CFB1C3A-3830-4B0B-8A03-D116F01311C7}"
+	ProjectSection(SolutionItems) = preProject
+		CreateCode\BLL.cs = CreateCode\BLL.cs
+		CreateCode\DALFactory.cs = CreateCode\DALFactory.cs
+		CreateCode\IBLL.cs = CreateCode\IBLL.cs
+		CreateCode\IDAL.cs = CreateCode\IDAL.cs
+		CreateCode\Model.cs = CreateCode\Model.cs
+		CreateCode\MySqlDAL.cs = CreateCode\MySqlDAL.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dapper.BLL", "Dapper\Dapper.BLL\Dapper.BLL.csproj", "{6E3640A4-2B40-4EE3-AC2B-A6EAC81F3B69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dapper.Factory", "Dapper\Dapper.Factory\Dapper.Factory.csproj", "{A22F262E-5491-47C3-9F34-C55AE3CE7CF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dapper.IBLL", "Dapper\Dapper.IBLL\Dapper.IBLL.csproj", "{73615157-D86A-4021-BC64-C60238A3078F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dapper.IDAL", "Dapper\Dapper.IDAL\Dapper.IDAL.csproj", "{1DC7E098-44D4-41E0-9B5C-EF57D5D9AC9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dapper.Model", "Dapper\Dapper.Model\Dapper.Model.csproj", "{7E568D7D-7512-4620-9A66-298FB9F13D3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dapper.MySqlDAL", "Dapper\Dapper.MySqlDAL\Dapper.MySqlDAL.csproj", "{3ACA1D26-C56B-4C15-BC6F-A783AC505240}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{6DE564D0-C04E-45ED-8BEB-1D933C56F857}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dapper.Common", "Dapper\Dapper.Common\Dapper.Common.csproj", "{0534F981-A695-4260-9619-CAEE2319D751}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFA69349-D39D-4AD2-A9A9-B7F0FAE2B119}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFA69349-D39D-4AD2-A9A9-B7F0FAE2B119}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFA69349-D39D-4AD2-A9A9-B7F0FAE2B119}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFA69349-D39D-4AD2-A9A9-B7F0FAE2B119}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E3640A4-2B40-4EE3-AC2B-A6EAC81F3B69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E3640A4-2B40-4EE3-AC2B-A6EAC81F3B69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E3640A4-2B40-4EE3-AC2B-A6EAC81F3B69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E3640A4-2B40-4EE3-AC2B-A6EAC81F3B69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A22F262E-5491-47C3-9F34-C55AE3CE7CF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A22F262E-5491-47C3-9F34-C55AE3CE7CF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A22F262E-5491-47C3-9F34-C55AE3CE7CF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A22F262E-5491-47C3-9F34-C55AE3CE7CF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73615157-D86A-4021-BC64-C60238A3078F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73615157-D86A-4021-BC64-C60238A3078F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73615157-D86A-4021-BC64-C60238A3078F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73615157-D86A-4021-BC64-C60238A3078F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DC7E098-44D4-41E0-9B5C-EF57D5D9AC9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DC7E098-44D4-41E0-9B5C-EF57D5D9AC9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DC7E098-44D4-41E0-9B5C-EF57D5D9AC9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DC7E098-44D4-41E0-9B5C-EF57D5D9AC9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E568D7D-7512-4620-9A66-298FB9F13D3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E568D7D-7512-4620-9A66-298FB9F13D3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E568D7D-7512-4620-9A66-298FB9F13D3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E568D7D-7512-4620-9A66-298FB9F13D3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ACA1D26-C56B-4C15-BC6F-A783AC505240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ACA1D26-C56B-4C15-BC6F-A783AC505240}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ACA1D26-C56B-4C15-BC6F-A783AC505240}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ACA1D26-C56B-4C15-BC6F-A783AC505240}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0534F981-A695-4260-9619-CAEE2319D751}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0534F981-A695-4260-9619-CAEE2319D751}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0534F981-A695-4260-9619-CAEE2319D751}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0534F981-A695-4260-9619-CAEE2319D751}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6E3640A4-2B40-4EE3-AC2B-A6EAC81F3B69} = {3EF3329C-091C-4F9E-98AE-100B6B2D4CD4}
+		{A22F262E-5491-47C3-9F34-C55AE3CE7CF1} = {3EF3329C-091C-4F9E-98AE-100B6B2D4CD4}
+		{73615157-D86A-4021-BC64-C60238A3078F} = {3EF3329C-091C-4F9E-98AE-100B6B2D4CD4}
+		{1DC7E098-44D4-41E0-9B5C-EF57D5D9AC9D} = {3EF3329C-091C-4F9E-98AE-100B6B2D4CD4}
+		{7E568D7D-7512-4620-9A66-298FB9F13D3E} = {3EF3329C-091C-4F9E-98AE-100B6B2D4CD4}
+		{3ACA1D26-C56B-4C15-BC6F-A783AC505240} = {3EF3329C-091C-4F9E-98AE-100B6B2D4CD4}
+		{0534F981-A695-4260-9619-CAEE2319D751} = {3EF3329C-091C-4F9E-98AE-100B6B2D4CD4}
+	EndGlobalSection
+EndGlobal

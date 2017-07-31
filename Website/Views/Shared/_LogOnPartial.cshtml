@@ -1,0 +1,9 @@
+﻿@if (HttpContext.Current.Request.IsAuthenticated)
+{
+    @:欢迎：<b>[@User.Identity.Name] </b>
+    <a href="~/Home/SignOff">退出</a>
+}
+else
+{
+    <a href="~/Home/SignIn">登录</a>
+}

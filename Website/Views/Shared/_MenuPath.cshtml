@@ -1,0 +1,6 @@
+﻿<ul class="breadcrumb">
+    <li>Home</li>
+    @if (@ViewContext.RouteData.Values["controller"].ToString().ToUpper() != "HOME")
+    {<li>@ViewContext.RouteData.Values["controller"]</li> }
+    <li>@ViewContext.RouteData.Values["action"]</li>
+</ul>
