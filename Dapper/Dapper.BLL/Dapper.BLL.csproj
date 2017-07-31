@@ -54,14 +54,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL.cs" />
+    <Compile Include="MenuBLL.cs" />
+    <Compile Include="PermissionBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoleBLL.cs" />
     <Compile Include="UserBLL.cs" />
+    <Compile Include="UserRoleBLL.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Dapper.Common\Dapper.Common.csproj">
+      <Project>{0534f981-a695-4260-9619-caee2319d751}</Project>
+      <Name>Dapper.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Dapper.Factory\Dapper.Factory.csproj">
       <Project>{a22f262e-5491-47c3-9f34-c55ae3ce7cf1}</Project>
       <Name>Dapper.Factory</Name>

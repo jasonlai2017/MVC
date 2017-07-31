@@ -22,3 +22,5 @@ D:\GitHub\Test\MVC\Dapper\Dapper.BLL\bin\Debug\Sigil.dll
 D:\GitHub\Test\MVC\Dapper\Dapper.BLL\bin\Debug\Jil.pdb
 D:\GitHub\Test\MVC\Dapper\Dapper.BLL\bin\Debug\Jil.xml
 D:\GitHub\Test\MVC\Dapper\Dapper.BLL\bin\Debug\Sigil.xml
+D:\GitHub\Test\MVC\Dapper\Dapper.BLL\bin\Debug\Dapper.Common.dll
+D:\GitHub\Test\MVC\Dapper\Dapper.BLL\bin\Debug\Dapper.Common.pdb

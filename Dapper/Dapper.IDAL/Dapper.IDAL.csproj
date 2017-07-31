@@ -54,7 +54,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IDAL.cs" />
+    <Compile Include="IMenuDAL.cs" />
+    <Compile Include="IPermissionDAL.cs" />
+    <Compile Include="IRoleDAL.cs" />
     <Compile Include="IUserDAL.cs" />
+    <Compile Include="IUserRoleDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
